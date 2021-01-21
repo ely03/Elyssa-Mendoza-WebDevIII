@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counting</title>
+</head>
+<body>
+
+    <form method="GET" action="">
+        Start Number:<input type="text" name="numStart">
+		<br>
+		End Number:<input type="text" name="numEnd">
+		<br>
+        <input type="submit" name="submit" value="count">
+		<br>
+
+    <?php
+	
+	if (isset($_GET['submit'])) {
+    
+	$a = $_GET['numStart'];
+    $b = $_GET['numEnd'];
+    
+	if($a = $_GET['numStart']=='++')
+		echo "a+b";
+		else if($_GET['numend']=='--')
+		echo "a+b";
+		else if($_GET['samevalue']=='=')
+		echo "Start and End Number is the Same";
+		
+	}
+	?>
+    
+</form>
+
+
+

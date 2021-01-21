@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <form method="GET" action="">
+        <input type="text" name="numA">
+        <select name="operator">
+        <option>+</option>
+        <option>-</option>
+        <option>*</option>
+        <option>/</option>
+        </select>
+        <input type="text" name="numB">
+        <input type="submit" name="submit" value="Submit">
+    
+
+<?php
+
+		if (isset($_GET['submit'])) {
+		$numA = $_GET['numA'];
+		$numB = $_GET['numB'];
+		if($operator = $_GET['operator']=='+')
+		echo $numA + $numB;
+		else if($_GET['operator']=='-')
+		echo $numA - $B;
+		else if($_POST['operator']=='*')
+		echo $numA * $numB;
+		else if($_GET['operator']=='/')
+		echo $numA / $numB;
+}	
+?>
+
+
+</form>	
+</body>
+</html>
